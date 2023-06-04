@@ -1,0 +1,13 @@
+ 
+# This code generates a .gitignore file for the project
+import os
+
+# List of files and directories to ignore
+ignore_list = ['__pycache__', '.vscode', '.idea', '.git']
+
+# Create .gitignore file and write ignore_list to it
+with open('.gitignore', 'w') as f:
+    for item in ignore_list:
+        f.write("%s\n" % item)
+
+node_modules
